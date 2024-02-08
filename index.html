@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AteGo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p><span>Ate</span>Go</p>
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#prestations">Prestations</a></li>
+        <li><a href="#a_propos">A Propos</a></li>
+        <li><a href="#devis">Contact</a></li>
+      </ul>
+
+      <!-- prestations responsive -->
+      <div class="toggle_menu"></div>
+    </header>
+
+    <!-- section accueil home -->
+
+    <section id="home">
+      <div class="left">
+        <h4>Les travaux bien faits</h4>
+        <h1>Plus d'inquiétudes en cas de problème !</h1>
+        <p>
+          AteGo est disponible à toute heure, dans le Finistère Sud. <br />
+          Electricité, plomberie, tous types de travaux. <br />
+          A partir de 25€ de l'heure.
+        </p>
+        <button><a href="#devis">Prendre contact</a></button>
+      </div>
+      <div class="right">
+        <img src="images/img1.png" />
+      </div>
+    </section>
+
+    <!-- section  prestations -->
+
+    <section id="prestations">
+      <h4 class="mini_title">Plusieurs prestations disponibles</h4>
+      <h2 class="title">Nos prestations :</h2>
+      <div class="prestas">
+        <div class="presta">
+          <img src="images/img2.png" />
+          <p>Electricté</p>
+          <h2>Tableau électrique</h2>
+          <h2>Remplacement de prises</h2>
+          <a href="#devis">Devis</a>
+        </div>
+        <div class="presta">
+          <img src="images/img3.png" />
+          <p>Plomberie</p>
+          <h2>Remplacement de tuyaux</h2>
+          <h2>Travaux divers</h2>
+          <a href="#devis">Devis</a>
+        </div>
+        <div class="presta">
+          <img src="images/img4.png" />
+          <p>Petits travaux</p>
+          <h2>Peinture, carrelage, parquet</h2>
+          <h2>Tous types de réparations</h2>
+          <a href="#devis">Devis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section about us -->
+
+    <section id="a_propos">
+      <h3 class="title">Pourquoi choisir AteGo ?</h3>
+      <div class="about">
+        <div class="left">
+          <img src="images/img-about-us.png" />
+        </div>
+        <div class="right">
+          <h3>La qualité et la rapidité</h3>
+          <li>Expertise Artisanale : Plus de 30 ans d'expérience.</li>
+          <li>Qualité : la perfection toujours recherchée.</li>
+          <li>Polyvalence : Tous travaux.</li>
+          <li>
+            Attention aux Détails : Chaque détail est pris en charge avec
+            précision.
+          </li>
+          <li>
+            Projets Personnalisés : Des projets sur mesure selon vos envies.
+          </li>
+          <li>Résultat Impeccable : Notre seul but, vous satisfaire.</li>
+          <li>Honnêteté : Nous sommes là pour réparer, pas pour profiter.</li>
+          <button><a href="#devis">Contact</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section devis -->
+    <section id="devis">
+      <h4 class="mini_title">Votre demande</h4>
+      <h2 class="title">AteGo en cours de création arrive bientôt.</h2>
+      <p>
+        En attendant que ce formulaire soit actif, n'hésitez pas à nous envoyer
+        un email.
+      </p>
+      <form action="">
+        <label> Votre Nom :</label>
+        <input type="text" name="nom" required />
+        <label> Votre Email :</label>
+        <input type="email" name="email" required />
+        <label> Votre Numéro :</label>
+        <input type="text" name="numero" />
+        <label> Décrivez-nous votre demande :</label>
+        <textarea rows="6"></textarea>
+        <label> Date de la prestation souhaitée :</label>
+        <input type="date" name="date" required />
+        <label> Si c'est une urgence, veuillez le préciser :</label>
+        <input type="text" name="urgence" />
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="services_list">
+        <div class="service">
+          <img src="images/clock.png" alt="" />
+          <h2>Ouverture</h2>
+          <p>8h30 à 19h</p>
+        </div>
+
+        <div class="service">
+          <img src="images/pin.png" alt="" />
+          <h2>Adresse</h2>
+          <p>Quimper et ses alentours</p>
+        </div>
+        <div class="service">
+          <img src="images/email.png" alt="" />
+          <h2>Email</h2>
+          <p>*******@gmail.com</p>
+        </div>
+        <div class="service">
+          <img src="images/call.png" alt="" />
+          <h2>Numéro de téléphone</h2>
+          <p>06.********</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var small_menu = document.querySelector('.toggle_menu')
+      var menu = document.querySelector('.menu')
+
+      small_menu.onclick = function () {
+        small_menu.classList.toggle('active')
+        menu.classList.toggle('responsive')
+      }
+    </script>
+  </body>
+</html>
